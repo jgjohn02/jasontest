@@ -32,7 +32,7 @@ class jasontest (
     dsc_state        => 'Stopped',
     dsc_physicalpath => $defaultwebsitepath,
   } ->
-  dsc_xwebsite { $websitename:
+  dsc_xwebsite {$websitename:
     dsc_ensure       => 'present',
     dsc_name         => $websitename,
     dsc_state        => 'Started',
