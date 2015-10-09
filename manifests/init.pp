@@ -26,12 +26,12 @@ class jasontest (
     dsc_name   => 'Web-Asp-Net45',
   } ->
   # Stop an existing website (set up in Sample_xWebsite_Default)
-  dsc_xwebsite { 'Stop DefaultSite':
+  dsc_xwebsite {'Stop DefaultSite':
     dsc_ensure       => 'present',
     dsc_name         => 'Default Web Site',
     dsc_state        => 'Stopped',
     dsc_physicalpath => $defaultwebsitepath,
-  } ->
+  }
   dsc_xwebsite {$websitename:
     dsc_ensure       => 'present',
     dsc_name         => $websitename,
