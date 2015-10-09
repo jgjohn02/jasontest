@@ -61,5 +61,8 @@ class jasontest (
     dsc_state        => 'Started',
     dsc_physicalpath => $destinationpath,
   }
+  
+  include chocolatey
+  
 }
 
