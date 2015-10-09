@@ -22,7 +22,7 @@ class jasontest {
     dsc_name   => 'Web-Server',
   }
 
-  dsc_xwebsite { 'BackeryWebSite':
+  dsc_xwebsite { $websitename:
     dsc_ensure       => 'present',
     dsc_name         => $websitename,
     dsc_state        => 'Started',
