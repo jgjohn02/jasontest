@@ -62,7 +62,7 @@ class jasontest (
     dsc_physicalpath => $destinationpath,
   }
   
-  include chocolatey
+ 
   
 }
 
